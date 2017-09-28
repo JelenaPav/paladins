@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>paladinsofthegalaxy</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="app/font/font-awesome-4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-- Add the new slick-theme.css if you want the default styling-->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="https://unpkg.com/vue-link-popover@2.0.0/themes/default.css" />
+ 
+    <link type="text/css" href="jScrollPane-master/style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+   <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer>
+</script>
+ <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+ 
+    
+      
+      
+      
+     
+
+      
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="jScrollPane-master/script/jquery.mousewheel.js"></script>
+
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="jScrollPane-master/script/jquery.jscrollpane.min.js"></script>
+<script src="https://unpkg.com/vue-scroll-behavior@0.1.6/dist/vue-scroll-behavior.js"></script>
+
+<script src="https://unpkg.com/vue-recaptcha@latest/dist/vue-recaptcha.js"></script>
+<!-- Minify -->
+<script src="https://unpkg.com/vue-recaptcha@latest/dist/vue-recaptcha.min.js"></script>
+
+<script type="text/javascript">
+    
+    $( document ).ready(function() {
+    $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav'
+          });
+
+          $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
+          });
+});
+</script>
+
+  </body>
+</html>

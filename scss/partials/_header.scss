@@ -1,0 +1,171 @@
+.header {
+    height: 65px;
+    background-color: black;
+    border-bottom: 3px solid $neonBlueLetters;
+
+    @media (max-width: 768px) {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    /*    position:relative;*/
+    //#33d6ff
+    .navbar {
+        border: none;
+        .active {
+            a {
+                background-color: transparent !important;
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+    .navbar-default {
+        background-color: black;
+        border-color: none;
+    }
+
+    .menu {
+        //  width:595px;
+        .main_header_menu {
+            width: 100%;
+            max-width: 570px;
+            margin: 0 auto;
+            float: none;
+        }
+
+        li {
+            display: inline-block !important;
+            color: white;
+            font-size: 12px;
+
+            text-transform: uppercase;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                display: block !important;
+            }
+
+            a:active {
+                color: $neonBlueLetters !important;
+                text-decoration: none;
+                background-image: url("../src/components/assets/images/navUnselected.png");
+                width: 115px;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    background-image: none;
+                    margin-left: 0px;
+                }
+            }
+            a:link {
+                color: white !important;
+                text-decoration: none;
+                height: 60px;
+                width: 115px;
+                background-image: url("../src/components/assets/images/navUnselected.png");
+                margin-left: -20px;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    background-image: none;
+                    margin-left: 0px;
+                }
+            }
+            .navigation-menu {
+                line-height: 32px;
+            }
+            a:focus {
+
+                color: $neonBlueLetters !important;
+                text-decoration: none;
+                background-color: transparent;
+                background-image: url("../src/components/assets/images/navSelected.png");
+                width: 115px;
+            }
+            a:hover {
+                color: $neonBlueLetters !important;
+                text-decoration: none;
+                background-color: transparent;
+
+                background-image: url("../src/components/assets/images/navSelected.png");
+                width: 115px;
+
+            }
+
+        }
+        .nav {
+
+            /*             height: 60px;*/
+
+            line-height: 3.2;
+
+        }
+
+    }
+    .logo-img {
+        text-align: center;
+
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+
+    }
+    .logo {
+
+        img {
+
+            /*             position: relative;*/
+            /*              position: absolute;
+                         top:5px;*/
+        }
+    }
+    .socials {
+        /*        position: relative;*/
+        /*     position: absolute;
+              top:15px;*/
+        .socials-you {
+            display: inline-block;
+            margin-top: 15px;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin-bottom: 35px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+        }
+        img {
+            border: 3px solid black;
+        }
+    }
+
+    @media (min-width: 1716px) {
+
+        .col-lg-5 {
+            width: 34.666667%;
+        }
+    }
+    @media (max-width: 1444px) and (min-width: 1200px) {
+
+        .col-lg-5 {
+            width: 49.666667%;
+        }
+    }
+
+    @media (max-width: 1019px) and (min-width: 992px) {
+
+        .col-md-7 {
+            width: 68.333333%;
+        }
+    }
+    @media (max-width: 891px) and (min-width: 797px) {
+
+        .col-sm-8 {
+            width: 74.666667%;
+        }
+    }
+
+}

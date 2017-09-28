@@ -1,0 +1,207 @@
+.footer {
+    background-color: $colorFooter;
+    .downloadBox {
+        background-color: transparent;
+        width: 100%;
+        max-width: 1060px;
+        margin: 80px auto;
+        .row {
+            .nav {
+                position: relative;
+                bottom: 5px;
+                .router-link-exact-active {
+                }
+                .nav-item {
+                    height: 20px;
+                    margin: 0 !important;
+
+                }
+                li:hover {
+
+                    background-position: 15px 0px;
+                    background-size: 15%;
+                    background-image: url("../src/components/assets/images/Slashes.png");
+                    background-repeat: no-repeat;
+
+                }
+                li {
+                    padding: 0 !important;
+                    margin: 0 !important;
+
+                    a {
+                        padding: 0 !important;
+                        font-size: 18px !important;
+                        color: rgb(220, 220, 220) !important;
+                        position: relative;
+                        line-height: 0;
+                        background-color: transparent !important;
+                        margin: 0 !important;
+                        left: 40px;
+                        top: 7px;
+                    }
+                }
+                a:active {
+                    color: rgb(220, 220, 220) !important;
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+
+                }
+                a:link {
+                    color: rgb(220, 220, 220) !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+
+                }
+                a:focus {
+                    color: white !important;
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+
+                }
+                a:hover {
+                    color: rgb(220, 220, 220) !important;
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+
+                }
+            }
+            .rightCol {
+                padding-left: 37.5px;
+                .footerCarousel {
+                    height: 130px;
+                }
+
+            }
+            .lastRow {
+
+                a:active {
+                    color: rgba(255, 255, 255, 0.502) !important;
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+                    font-size: 16px !important;
+
+                }
+                a:link {
+                    color: rgba(255, 255, 255, 0.502) !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+                    font-size: 16px !important;
+
+                }
+                a:focus {
+                    color: rgba(255, 255, 255, 0.502);
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+                    font-size: 16px !important;
+
+                }
+                a:hover {
+                    color: rgba(255, 255, 255, 0.502);
+                    font-weight: bold !important;
+                    text-decoration: none;
+                    background-color: transparent !important;
+                    font-size: 16px !important;
+
+                }
+                p {
+                    color: rgba(255, 255, 255, 0.502) !important;
+                    font-size: 16px !important;
+
+                }
+            }
+            .leftRow {
+                position: relative;
+                bottom: 80px;
+            }
+            .rightRow {
+                position: relative;
+                top: 30px;
+            }
+            .socials {
+                img {
+                    border: 3px solid $colorFooter;
+                    position: relative;
+                    top: 15px;
+                }
+            }
+            .leftCol {
+                padding-right: 37.5px;
+            }
+            .headline {
+                position: relative;
+                top: 5px;
+            }
+            .slashes {
+                width: 10px;
+                height: 15px;
+                position: relative;
+                left: -15px;
+                bottom: 20px;
+            }
+            h1 {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: left;
+                color: rgb(220, 220, 220) !important;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 18px;
+                color: rgb(220, 220, 220) !important;
+                margin-bottom: 0px !important;
+                text-align: left;
+                line-height: 0;
+
+            }
+            .logo {
+
+                img {
+
+                    position: relative;
+                    left: 200px;
+                    bottom: 20px;
+
+                }
+            }
+        }
+
+        .carousel-3d-container {
+            margin: 0;
+            bottom: 30px;
+        }
+        .carousel-3d-slide {
+            background-color: transparent;
+            border: 0;
+        }
+        .carousel-3d-slide.current {
+            position: relative;
+            top: 15px;
+        }
+        .carousel-3d-container figcaption {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4);
+            bottom: 65px;
+            padding-left: 45px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            padding-right: 15px;
+            min-width: 100%;
+            box-sizing: border-box;
+            font-size: 18px;
+            color: rgb(220, 220, 220);
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.2;
+            text-align: left;
+        }
+        .carousel-3d-slider {
+            right: 30px;
+        }
+    }
+}

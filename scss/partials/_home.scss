@@ -1,0 +1,63 @@
+.home {
+    border-top: 3px solid $darkerBlue;
+    background: url("../src/components/assets/images/main background/main_background.jpg") no-repeat center top fixed;
+    @include vendor (background-size, cover);
+    width: 100%;
+    padding-bottom: 57%;
+    border-bottom: 3px solid $neonBlueLetters;
+    @media (max-width: 991px) {
+        background: url("../src/components/assets/images/main background/main_background.jpg") no-repeat center top local;
+        @include vendor (background-size, cover);
+    }
+    .navbar-transparent {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .menu {
+        li {
+            display: inline-block !important;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+
+            a:active {
+                color: white !important;
+                text-decoration: none;
+                background-image: url("../src/components/assets/images/navUnselected.png");
+                opacity: .6;
+                width: 115px;
+            }
+            a:link {
+                color: white !important;
+                text-decoration: none;
+
+                height: 60px;
+                width: 115px;
+                background-image: url("../src/components/assets/images/navUnselected.png");
+                opacity: .6;
+                margin-left: -25px;
+
+            }
+            a:focus {
+
+                color: white !important;
+                text-decoration: none;
+                background-color: transparent;
+                background-image: url("../src/components/assets/images/btnSelected.png");
+                opacity: 1 !important;
+                width: 115px;
+            }
+            a:hover {
+                color: white !important;
+                text-decoration: none;
+                background-color: transparent;
+                opacity: 1 !important;
+                background-image: url("../src/components/assets/images/btnSelected.png");
+                width: 115px;
+
+            }
+
+        }
+    }
+}

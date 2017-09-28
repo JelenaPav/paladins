@@ -1,0 +1,76 @@
+.download {
+    background: url("../src/components/assets/images/DownloadBG.png") no-repeat center center fixed;
+    @include vendor (background-size, cover);
+    border-bottom: 3px solid $neonBlueLetters;
+    position: relative;
+    @media (max-width: 991px) {
+        background: url("../src/components/assets/images/DownloadBG.png") no-repeat center top local;
+        @include vendor (background-size, cover);
+    }
+    .borderDiv, .container-fluid {
+        position: absolute;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-right: -50px !important;
+        margin-left: -50px !important;
+        height: 110px;
+    }
+    .borderTop {
+        -webkit-box-shadow: 0px 250px 60px -180px rgba(0, 222, 255, 0.7);
+        -moz-box-shadow: inset0px 250px 60px -180px rgba(0, 222, 255, 0.7);
+        box-shadow: inset 0px 230px 100px -200px rgba(0, 222, 255, 0.7);
+    }
+    .borderBottom {
+        -webkit-box-shadow: inset 0px -150px 100px -100px rgba(0, 222, 255, 0.7);
+        -moz-box-shadow: inset 0px -150px 100px -100px rgba(0, 222, 255, 0.7);
+        box-shadow: inset 0px -150px 100px -100px rgba(0, 222, 255, 0.7);
+    }
+    .downloadBox {
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 1060px;
+        width: 100%;
+        padding: 30px 40px;
+        margin: 80px auto;
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: left;
+            color: $neonBlueLetters !important;
+            margin-bottom: 40px;
+            img{
+                height: 26px;
+                vertical-align: baseline;
+                margin-right: 30px;
+            }
+            @media (max-width: 768px) {
+                font-size: 30px;
+                img{
+                    height: 23px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+            color: white;
+            line-height: 1.2;
+            padding-bottom: 85px;
+            padding-top: 25px;
+        }
+        .leftCol {
+            .store {
+                margin-bottom: 15px;
+                @media (max-width: 991px) {
+                    display: block;
+                    margin: 0 auto 15px;
+                }
+            }
+        }
+        .iconNSWD{
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

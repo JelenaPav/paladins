@@ -1,0 +1,152 @@
+.paladin_media {
+    @include vendor (background-size, cover);
+    @include box-shadow(0, -25px, 100px, $neonBlueLetters);
+    background: url("../src/components/assets/images/MediaBG.png") no-repeat center center fixed;
+    border-bottom: 3px solid $neonBlueLetters;
+    @media (max-width: 991px) {
+        background: url("../src/components/assets/images/MediaBG.png") no-repeat center top local;
+        @include vendor (background-size, cover);
+    }
+    .mediaBox {
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 1060px;
+        width: 100%;
+        padding: 30px 40px;
+        margin: 80px auto;
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: left;
+            color: $neonBlueLetters !important;
+            margin-bottom: 40px;
+            img{
+                height: 26px;
+                vertical-align: baseline;
+                margin-right: 30px;
+            }
+            @media (max-width: 768px) {
+                font-size: 30px;
+                img{
+                    height: 23px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .mediaCarousel {
+            .slick-next {
+                right: 10px !important;
+                z-index: 2 !important;
+                opacity: 1 !important;
+            }
+            .slick-next:before {
+                font-family: $slick-font-family !important;
+                content: $slick-next-character !important;
+                color: $neonBlueLetters !important;
+                font-size: 30px !important;
+                opacity: 1 !important;
+            }
+            [dir='rtl'] .slick-next:before {
+                font-family: $slick-font-family !important;
+                content: $slick-prev-character !important;
+                color: $neonBlueLetters !important;
+                font-size: 30px !important;
+                opacity: 1 !important;
+            }
+            .slick-prev {
+                left: 10px !important;
+                z-index: 2 !important;
+                opacity: 1 !important;
+            }
+            .slick-prev:before {
+                font-family: $slick-font-family !important;
+                content: $slick-prev-character !important;
+                color: $neonBlueLetters !important;
+                font-size: 30px !important;
+                opacity: 1 !important;
+            }
+            [dir='rtl'] .slick-prev:before {
+                font-family: $slick-font-family !important;
+                content: $slick-next-character !important;
+                color: $neonBlueLetters !important;
+                font-size: 30px !important;
+                opacity: 1 !important;
+            }
+            .slick-list {
+                padding-bottom: 60px;
+                z-index: 1 !important;
+            }
+            .slick-slide {
+                outline: 0;
+            }
+            .slick-arrow {
+                position: absolute;
+                top: 112%;
+                color: $neonBlueLetters;
+                opacity: 1 !important;
+            }
+            img {
+                max-width: 650px;
+                width:100%;
+/*                width: 70%;*/
+                margin: 0 auto;
+                border: 2px solid $neonBlueLetters;
+            }
+            .slider-nav {
+                padding-bottom: 40px;
+                img {
+                    max-width:190px;
+                    width:100%;
+/*                    width: 90%;*/
+                 @media (max-width: 600px) {
+                   max-width:130px;
+                }
+
+
+                }
+            }
+            .slide {
+                position: relative;
+            }
+            .slide__caption {
+                bottom: 2px;
+                min-height: 40px;
+                left: 142px;
+                position: absolute;
+                width: 69.5%;
+                z-index: 2;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding-left: 30px;
+                font-size: 18px;
+                line-height: 3.2;
+                
+                 @media (max-width: 837px) {
+                   line-height: 1.2;
+                }
+                
+                .fa-share-alt {
+                    padding-left: 420px;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .row {
+          
+            .headline {
+                position: relative;
+                top: 5px;
+            }
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: left;
+                color: $neonBlueLetters !important;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+ 

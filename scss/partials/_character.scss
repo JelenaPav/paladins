@@ -1,0 +1,164 @@
+.character {
+    background: url("../src/components/assets/images/CharactersBG.png") no-repeat center center fixed;
+    @include vendor (background-size,cover);
+     border-bottom: 3px solid $neonBlueLetters;
+   
+    
+    .characterBox {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding:15px;
+        max-width: 1060px;
+         width: 100%;
+
+
+        margin: 80px auto;
+       
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .row {
+            width: 95%;
+            
+            .rightCol {
+                padding-left: 37.5px;
+            }
+            .leftCol {
+                padding-right: 37.5px;
+                
+                a{
+                    cursor:pointer;
+                }
+
+                .paragraphs{
+                    //overflow-y: scroll;
+                    height: 500px;
+                    overflow-y: auto;
+                    
+                }
+                .jspDrag{
+                    background:$neonBlueLetters;
+                    width:10px;
+                    left: -3px;
+                }
+                .jspTrack{
+                     width:5px;
+                      background:$neonBlueLetters;
+                }
+                .jspVerticalBar{
+                    background: transparent;
+                }
+
+
+            }
+            
+            .headline{
+                position:relative;
+                top:5px;
+            }
+
+            h1 {
+                font-size: 36px;
+             
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: left;
+                color: $neonBlueLetters !important;
+              
+                text-transform: uppercase;
+                
+            }
+            h3{
+                 text-align: left;
+                color: $neonBlueLetters !important;
+                text-transform: uppercase;
+                 font-size: 20px;
+                     margin-top: 0px;
+                     margin-bottom: 40px;
+            }
+            p {
+                font-size: 18px;
+                color: white !important;
+                line-height: 1.2;
+                text-align:  justify;
+                padding-right: 30px;
+               
+            }
+    
+        }
+    }
+       .menu{
+      //  width:595px;
+        
+        li{
+            display:inline-block !important;
+            color:white;
+            font-size: 14px;
+            text-transform: uppercase;
+             text-align: center;
+             margin-left: -25px;
+           
+             a:active{
+                 color:white !important;
+                 text-decoration: none;
+/*                  background-image: url("../src/components/assets/images/navUnselected.png");*/
+                    background-image: url("../src/components/assets/images/btnSelected.png") !important;
+                  opacity:1 !important;
+                  width:115px;
+             }
+             a:link{
+                 color:white !important;
+                 text-decoration: none;
+              
+                  height: 60px;
+                  width:115px;
+                   background-image: url("../src/components/assets/images/navUnselected.png");
+                   opacity:.6;
+                 
+                  
+             }
+             a:focus{
+              
+                   color:white !important;
+                   text-decoration: none;
+                   background-color: transparent;
+                    background-image: url("../src/components/assets/images/btnSelected.png");
+                    opacity:1 !important;
+                     width:115px;
+             }
+             a:hover{
+                   color:white !important;
+                   text-decoration: none;
+                    background-color: transparent;
+                    opacity:1 !important; 
+                    background-image: url("../src/components/assets/images/btnSelected.png");
+                     width:115px;
+                    
+                 
+             }
+
+        }
+        .nav{
+            
+       
+            position:relative;
+          //  left:600px;
+            bottom:20px;
+            line-height: 3.2;
+            padding-bottom: 30px;
+        
+        }
+    }
+    .router-link-exact-active {
+        a:link{
+   
+                    background-image: url("../src/components/assets/images/btnSelected.png") !important;
+                    opacity:1 !important;
+        
+                     }
+                     
+    }
+}
+
